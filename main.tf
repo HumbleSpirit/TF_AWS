@@ -3,6 +3,7 @@ terraform {
     bucket = "terraform-state-sb"
     key = "terraform/terraform.tfstate"
     region = "eu-central-1"
+	dynamodb_table = "terraform-lock"
   }
   required_providers {
     aws = {
